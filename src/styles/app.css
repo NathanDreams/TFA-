@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: sans-serif;
   font-size: 18px;
@@ -166,4 +167,72 @@ header nav a {
   max-width: 75%;
   display: flex;
   text-align: center;
+}
+
+.footer-distributed {
+  background-color: #292c2f;
+  width: 100%;
+  text-align: center;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Footer links */
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease 0.25s;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease 0.25s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-distributed .footer-right a:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+.footer-distributed p.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
 }/*# sourceMappingURL=app.css.map */

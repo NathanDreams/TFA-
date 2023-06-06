@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-
+/* PAS OUBLIER VIDEO MR TOURNAY*/
 body {
     background-color: #00292B;
 }
@@ -29,17 +29,7 @@ p {
 	margin-right: 10%;
 }
 
-.container {
-	width: 100%;
-	max-width: 2400px;
-	margin: 0 auto;
-	
-	
-	padding-right: 3%;
-	padding-left: 3%;
 
-	
-}
 
 .hamburger {
 	position: relative;
@@ -100,6 +90,7 @@ p {
 	text-align: center;
 	padding: 12px 16px;
 	background-color: #3E885B;
+	overflow: hidden;
 
 	color: #00292B;
 	text-decoration: none;
@@ -119,31 +110,41 @@ p {
 	}
 }
 
-
-
-
-
 header {
 	color: #FFF;
 	position: fixed;
 	top: 0;
-	left: 0;
 	width: 100%;
-	z-index: 99;
+	transition: top 0.4s;
+	z-index: 999;
+      }
 
+	  header.hide {
+		top:-80px;
+	  }
 
 	.container {
-		padding-top: 32px;
-		padding-bottom: 32px;
+		padding-top: 15px;
+		padding-bottom: 15px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		width: 100%;
+	    max-width: 2400px;
+	    margin: 0 auto;
+	    background-color: #00292B;
+		flex-wrap: wrap;
+
+	
+	
+	padding-right: 3%;
+	padding-left: 3%;
 		}
 
 		nav {
 			display: grid;
-			grid-gap: 16px;
-			grid-template-columns: repeat(4, auto);
+			grid-gap: 18px;
+			grid-template-columns: repeat(6, auto);
 
 			@media (max-width: 767px) {
 				display: none;
@@ -155,10 +156,10 @@ header {
 				text-decoration: none;
 			}
 		}
-    }
+    
   .first-image {
 	padding-top: 150px;
-	max-width: 300px;
+	max-width: 400px;
 	display: block; /* Permet d'appliquer des marges et de centrer l'image horizontalement */
     margin-left: auto; /* Centre l'image horizontalement */
     margin-right: auto; /* Centre l'image horizontalement */

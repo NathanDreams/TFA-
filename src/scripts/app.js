@@ -18,3 +18,18 @@ window.onload = function () {
 
 
 
+var prevScrollPos = window.pageYOffset;
+
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  var header = document.querySelector('header');
+
+  if (prevScrollPos > currentScrollPos) {
+    header.classList.remove('hide');
+  } else {
+    header.classList.add('hide');
+  }
+
+  prevScrollPos = currentScrollPos;
+};
+

@@ -36,13 +36,16 @@ window.onscroll = function() {
 
 /* phrase déroulante */
 
-document.addEventListener("DOMContentLoaded", function() {
-	var toggleText = document.querySelector(".toggle-text");
-	var hiddenContent = document.querySelector(".hidden-content");
- 
-	toggleText.addEventListener("click", function() {
-	   hiddenContent.classList.toggle("show-content");
-	   toggleText.querySelector(".toggle-icon").textContent = hiddenContent.classList.contains("show-content") ? "-" : "+";
-	});
- });
- 
+
+
+
+
+const intros = document.querySelectorAll('.intro');
+
+intros.forEach(intro => {
+  const introContent = intro.querySelector('.intro-content');
+
+  introContent.addEventListener('click', () => {
+    intro.classList.toggle('active');
+  });
+});

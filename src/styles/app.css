@@ -226,35 +226,64 @@ nav a {
   margin-right: auto; /* Centre l'image horizontalement */
 }
 
+.but {
+  padding-top: 25px;
+}
+
 .third-section {
   padding-top: 50px;
 }
 
-.toggle-text {
-  cursor: pointer;
-  font-weight: bold;
+.fourth-section {
+  padding-top: 50px;
+}
+
+.texte-solution {
+  text-align: center;
+}
+
+.texte-logo {
+  text-align: center;
+}
+
+.intro {
+  position: relative;
+  width: 80%; /* Ajustez cette valeur selon votre préférence */
+  margin-left: 20px;
+  margin-right: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.intro:last-child {
+  border-bottom: none;
+}
+
+.intro-content {
+  font-family: "League Spartan", sans-serif;
   display: flex;
-  align-items: center;
-  border: 2px solid #000;
-  border-radius: 5px;
-  padding: 10px;
-  transition: background-color 0.3s ease-in-out;
   justify-content: space-between;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
-.toggle-icon {
+.sous-titre-sixth-section {
+  font-family: "League Spartan", sans-serif;
+}
+
+.toggle-button {
+  padding: 5px 10px;
+  background-color: #ccc;
+  border: none;
+  color: #fff;
   margin-left: 10px;
-  transition: transform 0.3s ease-in-out;
-  order: 1;
+  cursor: pointer;
 }
 
-.hidden-content {
+.additional-text {
   display: none;
-  margin-top: 10px;
+  padding-top: 10px;
 }
 
-.show-content {
+.intro.active .additional-text {
   display: block;
 }
 

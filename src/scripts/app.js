@@ -16,7 +16,7 @@ window.onload = function () {
 	});
 }
 
-
+/* effet menu */
 
 var prevScrollPos = window.pageYOffset;
 
@@ -33,3 +33,16 @@ window.onscroll = function() {
   prevScrollPos = currentScrollPos;
 };
 
+
+/* phrase déroulante */
+
+document.addEventListener("DOMContentLoaded", function() {
+	var toggleText = document.querySelector(".toggle-text");
+	var hiddenContent = document.querySelector(".hidden-content");
+ 
+	toggleText.addEventListener("click", function() {
+	   hiddenContent.classList.toggle("show-content");
+	   toggleText.querySelector(".toggle-icon").textContent = hiddenContent.classList.contains("show-content") ? "-" : "+";
+	});
+ });
+ 

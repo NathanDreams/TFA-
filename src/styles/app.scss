@@ -20,6 +20,12 @@ h1 {
 	font-size: 37px;
 }
 
+h2 {
+	font-family: 'League Spartan', sans-serif;
+	color: #f5f5f5;
+	margin-left: 5%;
+	padding-bottom: 12.5px;
+}
 p {
 	font-family: 'Roboto', sans-serif;
 	font-size: 26px;
@@ -100,7 +106,7 @@ p {
 	background-color: #24104f;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
 	.mobile-nav {
 		display: none;
 	}
@@ -146,7 +152,7 @@ header {
 			grid-gap: 18px;
 			grid-template-columns: repeat(6, auto);
 
-			@media (max-width: 767px) {
+			@media (max-width: 1000px) {
 				display: none;
 			}
 
@@ -158,17 +164,29 @@ header {
 		}
     
   .first-image {
-	padding-top: 150px;
+	margin-top: 100px;
 	max-width: 400px;
+	
 	display: block; /* Permet d'appliquer des marges et de centrer l'image horizontalement */
     margin-left: auto; /* Centre l'image horizontalement */
     margin-right: auto; /* Centre l'image horizontalement */
-  }
-
+	border-radius: 5%;
+	
+ }
   .first-text {
 	padding-top: 25px;
   }
 
+
+  .text-rencontre {
+	font-size: 18px;
+	height: 1.4;
+  }
+
+
+  .texte-probleme {
+	font-size: 18px;
+  }
 
 
   .rounded-button {
@@ -185,6 +203,40 @@ header {
 	background-color: #2980b9;
   }
   
+.second-section {
+	padding-top: 200px;
+}
+
+.image-graph {
+	width: 200px;
+	
+	display: block; /* Permet d'appliquer des marges et de centrer l'image horizontalement */
+    margin-left: auto; /* Centre l'image horizontalement */
+    margin-right: auto; /* Centre l'image horizontalement */
+}
+
+
+
+.logo-earth {
+	width: 200px;
+	display: block; /* Permet d'appliquer des marges et de centrer l'image horizontalement */
+    margin-left: auto; /* Centre l'image horizontalement */
+    margin-right: auto; /* Centre l'image horizontalement */
+}
+
+.logo-easy {
+	width: 300px;
+	display: block; /* Permet d'appliquer des marges et de centrer l'image horizontalement */
+    margin-left: auto; /* Centre l'image horizontalement */
+    margin-right: auto; /* Centre l'image horizontalement */
+}
+
+
+
+
+.third-section {
+	padding-top: 50px;
+}
 
 
 
@@ -201,6 +253,40 @@ header {
 
 
 
+
+
+
+
+.toggle-text {
+	cursor: pointer;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	border: 2px solid #000;
+	border-radius: 5px;
+	padding: 10px;
+	transition: background-color 0.3s ease-in-out;
+	justify-content: space-between;
+	
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .toggle-icon {
+	margin-left: 10px;
+	transition: transform 0.3s ease-in-out;
+	order: 1;
+ }
+ 
+ .hidden-content {
+	display: none;
+	margin-top: 10px;
+ }
+ 
+ .show-content {
+	display: block;
+ }
+ 
+ 
 
 
   .footer-distributed {

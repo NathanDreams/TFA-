@@ -82,6 +82,7 @@ p {
 .hamburger:hover:before,
 .hamburger:hover:after {
 	background-color: #3E885B; /* Couleur de fond des barres, :before et :after au survol du burger menu */
+	transition: 0.4s;
 }
 
 
@@ -176,9 +177,19 @@ header {
 	padding-left: 3%;
 		}
 
-		.survol:hover {
-			color:#3E885B;
+		.survol {
+			color: #f5f5f5; /* Couleur de texte par défaut */
+			transition: color 0.4s; /* Transition de couleur de 0.2 seconde */
 		}
+		
+		.survol:hover {
+			color: #3E885B; /* Couleur au survol */
+		}
+		
+		.survol:not(:hover) {
+			color: #f5f5f5; /* Couleur de retour à l'état non survolé */
+		}
+		
 
 		nav {
 			display: grid;
@@ -264,6 +275,13 @@ header {
     margin-right: auto; /* Centre l'image horizontalement */
 }
 
+.image-graph2 {
+	width: 200px;
+	
+	display: block; /* Permet d'appliquer des marges et de centrer l'image horizontalement */
+    margin-left: auto; /* Centre l'image horizontalement */
+    margin-right: auto; /* Centre l'image horizontalement */
+}
 
 
 .logo-earth {
@@ -340,7 +358,9 @@ header {
 	color: #000000;
 
 }
-
+.text-graph {
+	font-size: 20px;
+  }
 
 
 
@@ -389,7 +409,14 @@ header {
 
 
 
-
+  @media (min-width: 1024px) and (max-width: 1200px) {
+		.first-image {
+			margin-top: 200px;
+			width: 400px; /* Ajuster la taille de l'image en fonction de tes besoins */
+			margin-left: 100px; /* Ajuster la marge à gauche de l'image en fonction de tes besoins */
+		  }
+	}
+  
 
   @media (min-width: 1024px) {
 
@@ -421,11 +448,7 @@ header {
 		padding-top: 150px;
 	  }
 	  
-	  .first-image {
-		margin-top: 200px;
-		width: 30%; /* Ajuster la taille de l'image en fonction de tes besoins */
-		margin-left: 100px; /* Ajuster la marge à gauche de l'image en fonction de tes besoins */
-	  }
+	  
 	  
 	  .content-container {
 		width: 50%; /* Ajuster la taille du conteneur de texte en fonction de tes besoins */
@@ -441,11 +464,16 @@ header {
 	  }
 	  
 	  .second-section {
-		margin-top: 200px;
+		margin-top: 275px;
+	  }
+
+	  .text-graph {
+		font-size: 20px;
 	  }
 	  .third-section {
 		padding-top: 150px;
 	  }
+
 
 	  /* Ajouter une ligne vide de 25 pixels de hauteur */
 .ligne-vide {
@@ -458,10 +486,46 @@ header {
 	background-color: #3E885B;
 }
 
+.but {
+	font-size: 37px;
+}
+.image-graph {
+	position: absolute;
+	width: 300px;
+	left: 50%;
+	top: 1000px;
+	
+}
+.image-graph2 {
+	position: absolute;
+	width: 300px;
+	left: 50%;
+}
+
+.carre {
+	width: 50px;
+	height: 50px;
+	background-color: #3E885B;
+	color: white;
+	text-align: center;
+	line-height: 50px;
+  }
+  
+
+
+
  }	  
 	  
+ @media (min-width: 1200px) {
+	.first-image {
+		margin-top: 200px;
+		width: 600px; /* Ajuster la taille de l'image en fonction de tes besoins */
+		margin-left: 100px; /* Ajuster la marge à gauche de l'image en fonction de tes besoins */
+	  }
+ }
 
-
+	  
+	  
 
 
 

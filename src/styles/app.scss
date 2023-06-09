@@ -18,6 +18,14 @@ body {
 h1 {
 	font-family: 'League Spartan', sans-serif;
 	font-size: 37px;
+	text-decoration: none;
+}
+.home-button {
+	text-decoration: none;
+	color: #f5f5f5;
+}
+.home-button:hover {
+	color: #3E885B;
 }
 
 h2 {
@@ -149,6 +157,10 @@ header {
 	padding-left: 3%;
 		}
 
+		.survol:hover {
+			color:#3E885B;
+		}
+
 		nav {
 			display: grid;
 			grid-gap: 18px;
@@ -200,13 +212,14 @@ header {
   .rounded-button {
 	padding: 10px 20px;
 	border-radius: 10px;
-	background-color: #3498db;
-	color: #fff;
+	background-color: #3E885B;
+	color: #000000;
 	border: none;
 	font-size: 18px;
 	cursor: pointer;
 	margin-left: 50%;
 	margin-top: 50px;
+	text-decoration: none;
   }
   
   .rounded-button:hover {
@@ -216,6 +229,11 @@ header {
 .second-section {
 	padding-top: 200px;
 	
+}
+@media (min-width: 300px) and (max-width: 400px) {
+	.second-section {
+		padding-top: 250px;
+	}
 }
 
 .image-graph {
@@ -233,6 +251,7 @@ header {
 	display: block; /* Permet d'appliquer des marges et de centrer l'image horizontalement */
     margin-left: auto; /* Centre l'image horizontalement */
     margin-right: auto; /* Centre l'image horizontalement */
+	padding-top: 20px;
 }
 
 .logo-easy {
@@ -240,6 +259,7 @@ header {
 	display: block; /* Permet d'appliquer des marges et de centrer l'image horizontalement */
     margin-left: auto; /* Centre l'image horizontalement */
     margin-right: auto; /* Centre l'image horizontalement */
+	
 }
 
 .but {
@@ -248,9 +268,7 @@ header {
 
 
 
-.third-section {
-	padding-top: 25px;
-}
+
 
 /* Ajouter une ligne vide de 25 pixels de hauteur */
 .ligne-vide {
@@ -363,18 +381,24 @@ header {
 	h2 {
 		font-size: 37px;
 	}
-
+	.first-text {
+		font-size: 26px;
+	}
 	p {
 		max-width: 45ch;
-		justify-content: center;
+		
 	}
 	.section {
 		display: flex;
 		align-items: center;
 		display: flex;
-		justify-content: center;
+		padding-top: 100px;
 		align-items: center;
-		text-align: center;
+		
+	  }
+
+	  .content-container {
+		padding-top: 150px;
 	  }
 	  
 	  .first-image {
@@ -396,6 +420,24 @@ header {
 		padding: 10px 20px; /* Ajuster le rembourrage du bouton en fonction de tes besoins */
 	  }
 	  
+	  .second-section {
+		margin-top: 200px;
+	  }
+	  .third-section {
+		padding-top: 150px;
+	  }
+
+	  /* Ajouter une ligne vide de 25 pixels de hauteur */
+.ligne-vide {
+	height: 75px;
+	border: none;
+  }
+  
+.fourth-section {
+	padding-top: 75px;
+	background-color: #3E885B;
+}
+
  }	  
 	  
 

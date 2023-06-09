@@ -1,3 +1,6 @@
+'use strict';
+/* effet scroll */
+
 window.onload = function () {
 	window.addEventListener('scroll', function (e) {
 		if (window.pageYOffset > 100) {
@@ -7,6 +10,7 @@ window.onload = function () {
 		}
 	});
 
+	/* burger menu */
 	const menu_btn = document.querySelector('.hamburger');
 	const mobile_menu = document.querySelector('.mobile-nav');
 
@@ -14,6 +18,16 @@ window.onload = function () {
 		menu_btn.classList.toggle('is-active');
 		mobile_menu.classList.toggle('is-active');
 	});
+	
+	const mobile_nav_links = document.querySelectorAll('.mobile-nav a');
+
+    mobile_nav_links.forEach(link => {
+    link.addEventListener('click', function () {
+        menu_btn.classList.remove('is-active');
+        mobile_menu.classList.remove('is-active');
+    });
+});
+
 }
 
 /* effet menu */

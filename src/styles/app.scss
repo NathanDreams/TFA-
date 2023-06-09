@@ -26,6 +26,7 @@ h1 {
 }
 .home-button:hover {
 	color: #3E885B;
+	transition: 0.4s;
 }
 
 h2 {
@@ -58,16 +59,31 @@ p {
 	outline: none;
 	border: none;
 }
+.hamburger:hover .bar {
+	background-color: #3E885B; /* Couleur de fond des barres au survol du burger menu */
+}
+
+.hamburger:hover .bar:before,
+.hamburger:hover .bar:after {
+	background-color: #3E885B; /* Couleur de fond des barres au survol du burger menu */
+}
+
 
 .hamburger .bar, .hamburger:after, .hamburger:before {
 	content: '';
 	display: block;
 	width: 100%;
 	height: 5px;
-	background-color: #FFF;
+	background-color: #f5f5f5;
 	margin: 6px 0px;
 	transition: 0.4s;
 }
+.hamburger:hover .bar,
+.hamburger:hover:before,
+.hamburger:hover:after {
+	background-color: #3E885B; /* Couleur de fond des barres, :before et :after au survol du burger menu */
+}
+
 
 .hamburger.is-active:before {
 	transform: rotate(-45deg) translate(-8px, 6px);
@@ -80,7 +96,9 @@ p {
 .hamburger.is-active .bar {
 	opacity: 0;
 }
-
+.survol {
+	font-family: 'Roboto', sans-serif;
+}
 .mobile-nav {
 	position: fixed;
 	top: 0;
@@ -105,7 +123,7 @@ p {
 	margin: 0 auto 16px;
 	text-align: center;
 	padding: 12px 16px;
-	background-color: #3E885B;
+	background-color: #F5F5F5;
 	overflow: hidden;
 
 	color: #00292B;
@@ -113,7 +131,8 @@ p {
 }
 
 .mobile-nav a:hover {
-	background-color: #24104f;
+	background-color: #3E885B;
+	transition: 0.4s;
 }
 
 @media (min-width: 1024px) {
@@ -212,7 +231,7 @@ header {
   .rounded-button {
 	padding: 10px 20px;
 	border-radius: 10px;
-	background-color: #3E885B;
+	background-color: #F5F5F5;
 	color: #000000;
 	border: none;
 	font-size: 18px;
@@ -223,11 +242,12 @@ header {
   }
   
   .rounded-button:hover {
-	background-color: #2980b9;
+	background-color: #3E885B;
+	transition: 0.4s;
   }
   
 .second-section {
-	padding-top: 200px;
+	margin-top: 100px;
 	
 }
 @media (min-width: 300px) and (max-width: 400px) {

@@ -175,6 +175,7 @@ header {
  }
   .first-text {
 	padding-top: 25px;
+	font-size: 18px;
   }
 
 
@@ -325,10 +326,59 @@ header {
 
 
 
+  @media (min-width: 1200px) {
+
+	.section {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	  }
+	  
+	  .first-image {
+		width: 50%; /* Ajuster la taille de l'image en fonction de tes besoins */
+	  }
+	  
+	  .content-container {
+		width: 50%; /* Ajuster la taille du conteneur de texte en fonction de tes besoins */
+	  }
+	  
+	  .first-text {
+		margin-bottom: 20px; /* Ajuster la marge en bas du texte en fonction de tes besoins */
+	  }
+	  
+	  .rounded-button {
+		border-radius: 20px; /* Ajuster le rayon du bouton arrondi en fonction de tes besoins */
+		padding: 10px 20px; /* Ajuster le rembourrage du bouton en fonction de tes besoins */
+	  }
+	  
+		.section {
+		  flex-direction: row;
+		}
+	  
+		.first-image {
+		  width: 50%;
+		  margin-right: 20px; /* Ajuster la marge à gauche de l'image en fonction de tes besoins */
+		}
+	  
+		.content-container {
+		  width: 50%;
+		}
+	  }
+	  
 
 
 
 
+
+
+
+
+
+
+
+
+
+  
 
 
 

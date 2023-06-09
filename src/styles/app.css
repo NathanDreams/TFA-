@@ -44,6 +44,10 @@ p {
   margin-right: 10%;
 }
 
+.titre-text {
+  padding-top: 50px;
+}
+
 .hamburger {
   position: relative;
   display: block;
@@ -113,7 +117,7 @@ p {
   background-color: #24104f;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   .mobile-nav {
     display: none;
   }
@@ -154,7 +158,7 @@ nav {
   grid-gap: 18px;
   grid-template-columns: repeat(6, auto);
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   nav {
     display: none;
   }
@@ -167,7 +171,7 @@ nav a {
 
 .first-image {
   margin-top: 100px;
-  max-width: 400px;
+  width: 400px;
   display: block; /* Permet d'appliquer des marges et de centrer l'image horizontalement */
   margin-left: auto; /* Centre l'image horizontalement */
   margin-right: auto; /* Centre l'image horizontalement */
@@ -202,6 +206,8 @@ nav a {
   border: none;
   font-size: 18px;
   cursor: pointer;
+  margin-left: 50%;
+  margin-top: 50px;
 }
 
 .rounded-button:hover {
@@ -238,11 +244,17 @@ nav a {
 }
 
 .third-section {
-  padding-top: 50px;
+  padding-top: 25px;
+}
+
+/* Ajouter une ligne vide de 25 pixels de hauteur */
+.ligne-vide {
+  height: 25px;
+  border: none;
 }
 
 .fourth-section {
-  padding-top: 50px;
+  padding-top: 25px;
   background-color: #3E885B;
 }
 
@@ -260,9 +272,34 @@ nav a {
   background-color: #3E885B;
 }
 
+.sixth-section {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titre-module {
+  color: #000000;
+}
+
+.texte-module {
+  color: #000000;
+  font-size: 18px;
+}
+
+.but {
+  color: #000000;
+}
+
+.texte-logo {
+  color: #000000;
+}
+
 .intro {
   position: relative;
-  width: 80%; /* Ajustez cette valeur selon votre préférence */
+  width: 50%; /* Ajustez cette valeur selon votre préférence */
   margin-left: 20px;
   margin-right: 20px;
   border-bottom: 1px solid #ccc;
@@ -301,14 +338,29 @@ nav a {
   display: block;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
+  h1 {
+    margin-left: 35px;
+  }
+  h2 {
+    font-size: 37px;
+  }
+  p {
+    max-width: 45ch;
+    justify-content: center;
+  }
   .section {
     display: flex;
     align-items: center;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   .first-image {
-    width: 50%; /* Ajuster la taille de l'image en fonction de tes besoins */
+    margin-top: 200px;
+    width: 30%; /* Ajuster la taille de l'image en fonction de tes besoins */
+    margin-left: 100px; /* Ajuster la marge à gauche de l'image en fonction de tes besoins */
   }
   .content-container {
     width: 50%; /* Ajuster la taille du conteneur de texte en fonction de tes besoins */
@@ -319,16 +371,6 @@ nav a {
   .rounded-button {
     border-radius: 20px; /* Ajuster le rayon du bouton arrondi en fonction de tes besoins */
     padding: 10px 20px; /* Ajuster le rembourrage du bouton en fonction de tes besoins */
-  }
-  .section {
-    flex-direction: row;
-  }
-  .first-image {
-    width: 50%;
-    margin-right: 20px; /* Ajuster la marge à gauche de l'image en fonction de tes besoins */
-  }
-  .content-container {
-    width: 50%;
   }
 }
 .footer-distributed {

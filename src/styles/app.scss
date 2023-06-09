@@ -183,6 +183,11 @@ header {
 	height: 1.4;
   }
 
+  .text-rencontre2 {
+	font-size: 18px;
+	height: 1.4;
+	margin-top: 10px;
+  }
 
   .texte-probleme {
 	font-size: 18px;
@@ -244,18 +249,24 @@ header {
 
 .fourth-section {
 	padding-top: 50px;
+	background-color: #3E885B;
 }
 
 
 .texte-solution {
 	text-align: center;
+	font-weight: bold;
+	color: #000000;
+
  }
 
 .texte-logo {
 	text-align: center;
 }
 
-
+.fifth-section {
+	background-color: #3E885B;
+}
 
 
 

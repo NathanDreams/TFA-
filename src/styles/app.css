@@ -218,8 +218,8 @@ nav a {
   margin-top: 100px;
   width: 400px;
   display: block; /* Permet d'appliquer des marges et de centrer l'image horizontalement */
-  margin-left: auto; /* Centre l'image horizontalement */
-  margin-right: auto; /* Centre l'image horizontalement */
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 5%;
 }
 
@@ -254,6 +254,8 @@ nav a {
   margin-left: 50%;
   margin-top: 50px;
   text-decoration: none;
+  position: relative;
+  top: 30px;
 }
 
 .rounded-button:hover {
@@ -262,6 +264,10 @@ nav a {
 }
 
 .second-section {
+  margin-top: 250px;
+}
+
+.third-section {
   margin-top: 100px;
 }
 
@@ -311,6 +317,10 @@ nav a {
 
 .fourth-section {
   padding-top: 25px;
+  background-color: #3E885B;
+}
+
+.fourth-section-2 {
   background-color: #3E885B;
 }
 
@@ -398,6 +408,24 @@ nav a {
   display: block;
 }
 
+.ligne-vide2 {
+  height: 10px;
+  border: none;
+}
+
+.text-rencontre3 {
+  padding-top: 10px;
+}
+
+.titre-module {
+  margin-left: 11%;
+}
+
+.texte-module {
+  font-size: 24px;
+  margin-left: 11%;
+}
+
 @media (min-width: 1024px) and (max-width: 1200px) {
   .first-image {
     margin-top: 200px;
@@ -408,12 +436,13 @@ nav a {
 @media (min-width: 1024px) {
   h1 {
     margin-left: 35px;
+    font-size: 34px;
   }
   h2 {
-    font-size: 37px;
+    font-size: 48px;
   }
   .first-text {
-    font-size: 26px;
+    font-size: 34px;
   }
   p {
     max-width: 45ch;
@@ -422,7 +451,7 @@ nav a {
     display: flex;
     align-items: center;
     display: flex;
-    padding-top: 100px;
+    padding-top: 1%;
     align-items: center;
   }
   .content-container {
@@ -439,13 +468,33 @@ nav a {
     padding: 10px 20px; /* Ajuster le rembourrage du bouton en fonction de tes besoins */
   }
   .second-section {
-    margin-top: 275px;
+    margin-top: 350px;
   }
   .text-graph {
-    font-size: 20px;
+    font-size: 24px;
+  }
+  .text-rencontre {
+    font-size: 24px;
+  }
+  .text-rencontre2 {
+    font-size: 24px;
+    padding-top: 20px;
   }
   .third-section {
-    padding-top: 150px;
+    padding-top: 75px;
+  }
+  .third-section {
+    display: flex;
+    align-items: flex-start;
+  }
+  .titre-problem {
+    margin-right: 20px; /* Espacement entre le titre et le texte */
+    padding-top: 95px;
+  }
+  .texte-probleme {
+    font-size: 24px;
+    align-self: flex-start;
+    padding-bottom: 100px;
   }
   /* Ajouter une ligne vide de 25 pixels de hauteur */
   .ligne-vide {
@@ -455,30 +504,98 @@ nav a {
   .fourth-section {
     padding-top: 75px;
     background-color: #3E885B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .fourth-section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .images-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .texte-logo {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .images-container .image-container + .image-container {
+    margin-left: 250px; /* Espacement horizontal entre les deux images */
   }
   .but {
+    text-align: center; /* Centrer le texte du titre */
+    padding-right: 90px;
+  }
+  .logo-earth {
+    width: 237px;
+  }
+  .fifth-section {
+    padding-top: 75px;
+  }
+  .texte-solution {
     font-size: 37px;
+  }
+  .but {
+    font-size: 34px;
   }
   .image-graph {
     position: absolute;
     width: 300px;
-    left: 50%;
-    top: 1000px;
+    left: 60%;
+    top: 1100px;
   }
   .image-graph2 {
     position: absolute;
     width: 300px;
-    left: 50%;
+    left: 60%;
+    top: 1500px;
   }
-  .carre {
-    width: 50px;
-    height: 50px;
-    background-color: #3E885B;
-    color: white;
-    text-align: center;
-    line-height: 50px;
+  .ligne-vide2 {
+    height: 10px;
+    border: none;
+  }
+  .text-rencontre3 {
+    padding-top: 20px;
+  }
+  .sixth-section {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+  }
+  .intro-content:hover {
+    color: #3E885B;
+    transition: 0.4;
+  }
+  .sous-titre-sixth-section {
+    font-size: 34px;
+  }
+  .sous-titre-sixth-section:hover {
+    color: #3E885B;
+    transition: 0.4;
+  }
+  .sous-titre-sixth-section2:hover {
+    color: #3E885B;
+    transition: 0.4;
   }
 }
+.seventh-section {
+  margin-top: 150px;
+  margin-bottom: 75px;
+}
+
 @media (min-width: 1200px) {
   .first-image {
     margin-top: 200px;
@@ -491,7 +608,19 @@ nav a {
   width: 100%;
   text-align: center;
   font: normal 16px sans-serif;
-  padding: 45px 50px;
+  padding: 75px 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-distributed .footer-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-distributed .footer-left p {
@@ -500,7 +629,6 @@ nav a {
   margin: 0;
 }
 
-/* Footer links */
 .footer-distributed p.footer-links {
   font-size: 18px;
   font-weight: bold;
@@ -531,6 +659,12 @@ nav a {
   content: none;
 }
 
+.footer-distributed .footer-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .footer-distributed .footer-right a:hover {
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
@@ -542,8 +676,10 @@ nav a {
 
 /* Media Queries */
 @media (max-width: 600px) {
-  .footer-distributed .footer-left, .footer-distributed .footer-right {
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-right {
     text-align: center;
+    flex: 1;
   }
   .footer-distributed .footer-right {
     float: none;

@@ -12,9 +12,9 @@ body {
   color: #e41612;
 }
 
-/* PAS OUBLIER VIDEO MR TOURNAY*/
 body {
   background-color: #00292B;
+  overflow-x: hidden;
 }
 
 * {
@@ -44,6 +44,10 @@ h2 {
   color: #f5f5f5;
   margin-left: 5%;
   padding-bottom: 12.5px;
+}
+
+h3 {
+  font-family: "League Spartan", sans-serif;
 }
 
 p {
@@ -221,6 +225,11 @@ nav a {
   margin-left: auto;
   margin-right: auto;
   border-radius: 5%;
+  transition: transform 0.4s ease;
+}
+
+.first-image:hover {
+  transform: scale(1.05);
 }
 
 .first-text {
@@ -236,11 +245,12 @@ nav a {
 .text-rencontre2 {
   font-size: 18px;
   height: 1.4;
-  margin-top: 10px;
+  margin-top: 100px;
 }
 
 .texte-probleme {
   font-size: 18px;
+  margin-right: 10%;
 }
 
 .rounded-button {
@@ -275,19 +285,39 @@ nav a {
   .second-section {
     padding-top: 250px;
   }
+  .rounded-button {
+    margin-left: auto; /* Supprimez margin-left: 50%; */
+    left: 20%;
+    transform: translateX(-50%);
+  }
+  .first-image {
+    width: 90%;
+  }
 }
-.image-graph {
-  width: 200px;
-  display: block; /* Permet d'appliquer des marges et de centrer l'image horizontalement */
-  margin-left: auto; /* Centre l'image horizontalement */
-  margin-right: auto; /* Centre l'image horizontalement */
+@media (min-width: 300px) and (max-width: 1024px) {
+  .image-graph {
+    width: 200px;
+    display: block; /* Permet d'appliquer des marges et de centrer l'image horizontalement */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+    transition: 0.4s ease;
+  }
+  .image-graph2 {
+    width: 200px;
+    display: block; /* Permet d'appliquer des marges et de centrer l'image horizontalement */
+    margin-left: auto; /* Centre l'image horizontalement */
+    margin-right: auto; /* Centre l'image horizontalement */
+    margin-top: 75px;
+    transition: transform 0.4s ease;
+  }
+}
+.image-graph:hover {
+  transform: scale(1.05);
 }
 
-.image-graph2 {
-  width: 200px;
-  display: block; /* Permet d'appliquer des marges et de centrer l'image horizontalement */
-  margin-left: auto; /* Centre l'image horizontalement */
-  margin-right: auto; /* Centre l'image horizontalement */
+.image-graph2:hover {
+  transform: scale(1.05);
 }
 
 .logo-earth {
@@ -296,6 +326,11 @@ nav a {
   margin-left: auto; /* Centre l'image horizontalement */
   margin-right: auto; /* Centre l'image horizontalement */
   padding-top: 20px;
+  transition: transform 0.4s ease;
+}
+
+.logo-earth:hover {
+  transition: transform 0.4s ease;
 }
 
 .logo-easy {
@@ -303,6 +338,11 @@ nav a {
   display: block; /* Permet d'appliquer des marges et de centrer l'image horizontalement */
   margin-left: auto; /* Centre l'image horizontalement */
   margin-right: auto; /* Centre l'image horizontalement */
+  transition: transform 0.4s ease;
+}
+
+.logo-easy:hover {
+  transition: transform 0.4s ease;
 }
 
 .but {
@@ -367,6 +407,25 @@ nav a {
   font-size: 20px;
 }
 
+.intro-content:hover {
+  color: #3E885B;
+  transition: 0.4;
+}
+
+.sous-titre-sixth-section {
+  font-size: 34px;
+}
+
+.sous-titre-sixth-section:hover {
+  color: #3E885B;
+  transition: 0.4;
+}
+
+.sous-titre-sixth-section2:hover {
+  color: #3E885B;
+  transition: 0.4;
+}
+
 .intro {
   position: relative;
   width: 50%; /* Ajustez cette valeur selon votre préférence */
@@ -426,11 +485,94 @@ nav a {
   margin-left: 11%;
 }
 
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+  margin-top: 100px;
+  margin-bottom: 300px;
+}
+
+.ui-kit-titre {
+  margin-top: 200px;
+}
+
 @media (min-width: 1024px) and (max-width: 1200px) {
   .first-image {
     margin-top: 200px;
     width: 400px; /* Ajuster la taille de l'image en fonction de tes besoins */
     margin-left: 100px; /* Ajuster la marge à gauche de l'image en fonction de tes besoins */
+  }
+}
+@media (min-width: 1024px) and (max-width: 1048px) {
+  .image-graph {
+    position: absolute;
+    width: 300px;
+    left: 65%;
+    top: 1250px;
+  }
+  .image-graph2 {
+    position: absolute;
+    width: 300px;
+    left: 65%;
+    top: 1750px;
+  }
+}
+@media (min-width: 1048px) and (max-width: 1370px) {
+  .image-graph {
+    position: absolute;
+    width: 300px;
+    left: 65%;
+    top: 1250px;
+  }
+  .image-graph2 {
+    position: absolute;
+    width: 300px;
+    left: 65%;
+    top: 1750px;
+  }
+}
+@media (min-width: 1370px) and (max-width: 1520px) {
+  .image-graph {
+    position: absolute;
+    width: 300px;
+    left: 65%;
+    top: 1150px;
+  }
+  .image-graph2 {
+    position: absolute;
+    width: 300px;
+    left: 65%;
+    top: 1650px;
+  }
+}
+@media (min-width: 1520px) and (max-width: 1720px) {
+  .image-graph {
+    position: absolute;
+    width: 300px;
+    left: 65%;
+    top: 1050px;
+  }
+  .image-graph2 {
+    position: absolute;
+    width: 300px;
+    left: 65%;
+    top: 1550px;
+  }
+}
+@media (min-width: 1720px) and (max-width: 2000px) {
+  .image-graph {
+    position: absolute;
+    width: 300px;
+    left: 65%;
+    top: 1100px;
+  }
+  .image-graph2 {
+    position: absolute;
+    width: 300px;
+    left: 65%;
+    top: 1600px;
   }
 }
 @media (min-width: 1024px) {
@@ -548,18 +690,6 @@ nav a {
   .but {
     font-size: 34px;
   }
-  .image-graph {
-    position: absolute;
-    width: 300px;
-    left: 60%;
-    top: 1100px;
-  }
-  .image-graph2 {
-    position: absolute;
-    width: 300px;
-    left: 60%;
-    top: 1500px;
-  }
   .ligne-vide2 {
     height: 10px;
     border: none;
@@ -568,7 +698,6 @@ nav a {
     padding-top: 20px;
   }
   .sixth-section {
-    margin-top: 75px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -592,8 +721,8 @@ nav a {
   }
 }
 .seventh-section {
-  margin-top: 150px;
-  margin-bottom: 75px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 @media (min-width: 1200px) {
@@ -602,9 +731,13 @@ nav a {
     width: 600px; /* Ajuster la taille de l'image en fonction de tes besoins */
     margin-left: 100px; /* Ajuster la marge à gauche de l'image en fonction de tes besoins */
   }
+  .seventh-section {
+    margin-top: 150px;
+    margin-bottom: 75px;
+  }
 }
 .footer-distributed {
-  background-color: #292c2f;
+  background-color: #00292B;
   width: 100%;
   text-align: center;
   font: normal 16px sans-serif;
